@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and Base Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+  min-height: 100vh;
+}
+
+/* Header */
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  color: #f1f120;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Display Area */
+.display {
+  width: 100%;
+  max-width: 350px;
+  height: 90px;
+  background: #b7b6ad;
+  border: 5px solid #161515;
+  border-radius: 12px;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1em;
+  overflow-x: auto;
+  margin-bottom: 1em;
+  color: #000;
+}
+
+/* Calculator Body */
+.body {
+  background: #302626;
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+  max-width: 370px;
+}
+
+/* Buttons Grid */
+.arith {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button Styles */
+.numbers .btn,
+.btn-success,
+.btn-danger {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.numbers .btn:hover,
+.btn-success:hover,
+.btn-danger:hover {
+  background-color: #666;
+}
+
+/* Specific Button Tweaks */
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+/* Labels Above Buttons */
+span {
+  color: #f1f114;
+  font-size: 0.7rem;
+  text-align: center;
+  display: inline-block;
+  margin: 0.2em;
+}
+
+.pink {
+  color: rgb(228, 11, 98);
+}
+
+/* Fine Control Labels */
+#MATRIX,
+#VECTOR,
+#x10 {
+  font-size: 0.65rem;
+}
+
+#pi {
+  font-size: 0.8rem;
+}
+
+#e {
+  font-size: 0.85rem;
+}
+
+#equal {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Operator Styling */
+#divide,
+#multiply,
+#plus,
+#minus {
+  text-align: center;
+  font-weight: bold;
+}
+
+#Ran {
+  font-size: 0.7rem;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .display {
+    height: 80px;
+    font-size: 1.4rem;
+  }
+
+  .arith {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4em;
+  }
+
+  .numbers .btn,
+  .btn-success,
+  .btn-danger {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  span {
+    font-size: 0.65rem;
+  }
+}
+.x10 {
+  font-size: 0.85rem;
+}
+
+.pink {
+  color: rgb(228, 11, 98);
+}
+
+#equal {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Optional enhancement */
+@media (max-width: 480px) {
+  .x10 {
+    font-size: 0.75rem;
+  }
+}

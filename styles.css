@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.arith{
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+margin-right: .5em;
+margin-left: 2em;
+justify-content: center;
+font-family: 'Roboto',sans-serif;
+height: 18em;
+}    
+.numbers .btn{
+    margin-right: 7px;
+    
+}
+.btn-success{
+    padding: 7px !important;
+}
+.body{
+    background: #302626;
+    width: fit-content;
+    position: relative;
+    left: 5.4em;
+    height: auto;
+    border-radius: 10px;
+}
+.display{
+    width: 310px;
+    height: 100px;
+    background: #b7b6ad;
+    position: relative;
+    box-sizing: border-box;
+    text-align: right;
+    font-family: 'Montessarat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   border: #161515 5px solid;
+   border-radius: 12px;
+    overflow-y:scroll;
+      white-space: nowrap;
+      font-size: 2em;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-left: 4px;
+
+   
+}
+.answer{
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+
+}
+span{
+    color: rgb(241, 241, 20);
+    font-size: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+.pink{
+    color:rgb(228, 11, 98)
+}
+#ins{
+    display: inline-block;
+    margin-left: 2em;
+}
+#off{
+     display: inline-block;
+    margin-left: 1.5em;
+}
+#clr{
+     display: inline-block;
+    margin-left: 1em;
+}
+#MATRIX{
+    font-size: 9px;
+}
+#VECTOR{
+    font-size: 9px;
+}
+#npr{
+    display: inline-block;
+    margin-left: 1.6em;
+}
+#ncr{
+    display: inline-block;
+    margin-left: 2.4em;
+}
+#STAT{
+    display: inline-block;
+    margin-left: .5em;
+}
+#CMPLX{
+    display: inline-block;
+    margin-left: .5em;
+}
+#Pol{
+    display: inline-block;
+    margin-left: 1.2em;
+}
+#Rec{
+display: inline-block;
+    margin-left: 1.6em;
+}
+#Rnd{
+    display: inline-block;
+    margin-left: .9em;
+}
+.x10{
+    font-size: 9px;
+}
+#pi{
+    font-size: 12px;
+}
+#e{
+    font-size: 13px;
+}
+#drg{
+    display: inline-block;
+    margin-left: .9em;
+}
+#equal{
+    font-size: 15px;
+}
+#divide{
+    margin-left: .2em;
+    padding-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+#multiply{
+    padding-right: 1.1em;
+    text-align: center;
+    font-weight: bold;
+}
+#plus{
+    padding-right: 1.1em;
+    text-align: center;
+    font-weight: bold;
+}
+#minus{
+    margin-left: .2em;
+
+padding-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+.shiftbtn{
+    border: #b7b6ad 2px solid;
+    /* Remove border-radius to keep it rectangular unless you want rounded corners */
+    border-radius: 50%; /* or keep as is if you want rounded corners */
+    padding: 5px 10px; /* adjust padding to give space around text */
+    width: 10px; /* let width adjust based on padding and content */
+    height: 10px; /* similarly for height */
+    position: relative;
+    left: 2em;
+    top: 1em;
+    display: inline-block;
+}
+.shiftbtn span {
+    display: block; /* force span to be block-level so text stays on one line */
+    text-align: center;
+    position: relative;
+    bottom: 2em;
+    right: 1em; /* center the text inside span */
+}
+/* .display>h1{
+    position: absolute;
+     left:5em; 
+    text-align: right;
+     top: 2em;
+
+} */
